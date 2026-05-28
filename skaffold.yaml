@@ -1,0 +1,21 @@
+apiVersion: skaffold/v4beta7
+kind: Config
+metadata:
+  name: my-app
+
+profiles:
+  - name: dev
+    deploy:
+      cloudrun:
+        projectid: kiran-497505
+        region: asia-south1
+  - name: staging
+    deploy:
+      cloudrun:
+        projectid: kiran-497505
+        region: asia-south1
+  - name: prod
+    deploy:
+      cloudrun:
+        projectid: kiran-497505
+        region: asia-south1
