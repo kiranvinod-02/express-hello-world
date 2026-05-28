@@ -3,23 +3,7 @@ kind: Config
 metadata:
   name: my-app
 
-manifests:
-  rawYaml:
-    - cloudrun-service.yaml
-
-profiles:
-  - name: dev
-    deploy:
-      cloudrun:
-        projectid: kiran-497505
-        region: asia-south1
-  - name: staging
-    deploy:
-      cloudrun:
-        projectid: kiran-497505
-        region: asia-south1
-  - name: prod
-    deploy:
-      cloudrun:
-        projectid: kiran-497505
-        region: asia-south1
+deploy:
+  cloudrun:
+    projectid: kiran-497505
+    region: asia-south1
