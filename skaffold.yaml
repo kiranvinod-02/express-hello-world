@@ -3,6 +3,14 @@ kind: Config
 metadata:
   name: my-app
 
+build:
+  artifacts:
+    - image: my-app
+
+manifests:
+  rawYaml:
+    - cloudrun-service.yaml
+
 deploy:
   cloudrun:
     projectid: kiran-497505
