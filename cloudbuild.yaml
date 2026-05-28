@@ -30,7 +30,7 @@ steps:
       - '--delivery-pipeline=my-pipeline'
       - '--region=${_REGION}'
       - '--images=${_SERVICE}=${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_SERVICE}:$SHORT_SHA'
-      - '--skaffold-version=2.0'
+     
 
 options:
   logging: CLOUD_LOGGING_ONLY
