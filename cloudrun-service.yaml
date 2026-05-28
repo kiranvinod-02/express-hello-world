@@ -2,15 +2,8 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: my-app
-  annotations:
-    run.googleapis.com/ingress: all
 spec:
   template:
-    metadata:
-      annotations:
-        run.googleapis.com/execution-environment: gen2
     spec:
       containers:
         - image: my-app
-          ports:
-            - containerPort: 8080
